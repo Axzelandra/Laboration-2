@@ -1,3 +1,32 @@
+<template>
+  <div id="app">
+    <HeaderComponent />
+    <Slideshow />
+    <BookingSection />
+    <ContactSection />
+    <footer>
+      <p>&copy; 2024 Föreningens namn. Alla rättigheter förbehållna.</p>
+    </footer>
+  </div>
+</template>
+
+<script>
+import HeaderComponent from './components/HeaderComponent.vue';
+import Slideshow from './components/Slideshow.vue';
+import BookingSection from './components/BookingSection.vue';
+import ContactSection from './components/ContactSection.vue';
+
+export default {
+  components: {
+    HeaderComponent,
+    Slideshow,
+    BookingSection,
+    ContactSection,
+  },
+};
+</script>
+
+<style>
 /* Grundläggande reset */
 * {
     margin: 0;
@@ -87,3 +116,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+</style>

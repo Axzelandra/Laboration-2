@@ -1,0 +1,27 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';  // Om du använder Vue Router
+//import store from './store';    // Om du använder Vuex
+import './assets/styles.css';   // Globala stilar
+
+createApp(App).use(router).mount('#app');
+
+mounted() {
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Byt bild varje 5 sekunder
+    }
+
+};
