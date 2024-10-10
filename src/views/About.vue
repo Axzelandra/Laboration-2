@@ -44,25 +44,25 @@ export default {
           name: "Sir Whiskers",
           role: "Ordförande",
           description: "Ledare med många års erfarenhet av att jaga möss och hålla möten.",
-          image: require("@/assets/sir-whiskers.jpg") // Byt ut med faktiska bilder
+          image: require("@/assets/bild1.jpg") // Byt ut med faktiska bilder
         },
         {
           name: "Miss Purrington",
           role: "Kassör",
           description: "Noggrann och effektiv med föreningens ekonomi, älskar att sova på tangentbord.",
-          image: require("@/assets/miss-purrington.jpg")
+          image: require("@/assets/bild1.jpg")
         },
         {
           name: "Mr. Fluffy",
           role: "Sekreterare",
           description: "Expert på att skriva mötesprotokoll, när han inte ligger och myser i solen.",
-          image: require("@/assets/mr-fluffy.jpg")
+          image: require("@/assets/bild1.jpg")
         },
         {
           name: "Duchess Meowington",
           role: "Vice Ordförande",
           description: "Har en elegant närvaro och ser till att allt går enligt plan med stil.",
-          image: require("@/assets/duchess-meowington.jpg")
+          image: require("@/assets/bild1.jpg")
         }
       ]
     };

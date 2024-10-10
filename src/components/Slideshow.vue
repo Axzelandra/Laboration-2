@@ -1,7 +1,7 @@
 <template>
   <div class="slideshow-container">
-    <div v-for="(slide, index) in slides" :key="index" class="slides" v-show="currentSlide === index">
-      <img :src="slide" style="width: 100%" />
+    <div v-for="(slide, index) in slides" :key="index" alt="Slideshow image" class="slides" v-show="currentSlide === index">
+      <img :src="require(`@/assets/${slide}`)" style="width: 100%" />
     </div>
 
     <!-- Boka nu knapp -->
@@ -42,9 +42,6 @@ export default {
   max-width: 100%;
 }
 
-.slides {
-  display: none;
-}
 
 .slides img {
   width: 100%;
