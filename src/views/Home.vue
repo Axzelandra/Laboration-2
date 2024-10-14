@@ -1,19 +1,21 @@
 <template>
   <div>
     <Slideshow />
-    <BookingSection />
-    <ContactSection />
+    <InfoSection />
+    <InstagramFeed />
   </div>
 </template>
 
 <script>
 import Slideshow from '../components/Slideshow.vue';
-import BookingSection from '../components/BookingSection.vue';
+import InfoSection from '../components/InfoSection.vue';
+import InstagramFeed from '../components/InstagramFeed.vue';
 
 export default {
   components: {
     Slideshow,
-    BookingSection,
+    InfoSection,
+    InstagramFeed,
   },
 };
 </script>

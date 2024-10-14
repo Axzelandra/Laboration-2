@@ -1,27 +1,20 @@
 <template>
   <div id="app">
     <HeaderComponent />
-    <Slideshow />
-    <BookingSection />
-    <ContactSection />
-    <footer>
-      <p>&copy; 2024 Föreningens namn. Alla rättigheter förbehållna.</p>
-    </footer>
+    <router-view /> <!-- Detta visar den aktuella route-komponenten -->
+    <FooterComponent />
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/Header.vue';
-import Slideshow from './components/Slideshow.vue';
-import BookingSection from './components/BookingSection.vue';
-import ContactSection from './components/ContactSection.vue';
+import FooterComponent from './components/Footer.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
-    HeaderComponent,
-    Slideshow,
-    BookingSection,
-    ContactSection,
+        HeaderComponent,
+        FooterComponent
   },
 };
 </script>
@@ -65,55 +58,11 @@ nav ul li a {
     text-decoration: none;
     font-size: 16px;
 }
-
-.hero {
-    position: relative;
-    overflow: hidden;
-}
-
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    height: 500px;
-}
-
-.slides {
-    
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.btn {
-    background-color: #d92e07c5;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
 }
 </style>

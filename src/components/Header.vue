@@ -7,7 +7,7 @@
           <li><router-link to="/">Hem</router-link></li>
           <li><router-link to="/about">Om oss</router-link></li>
           <li><router-link to="/booking">Boka Lokal</router-link></li>
-          <li><router-link to="/kontakt">Kontakt</router-link></li>
+          <li><router-link to="/contact">Kontakt</router-link></li>
         </ul>
       </nav>
     </div>

@@ -44,7 +44,9 @@ export default {
 
 
 .slides img {
-  width: 100%;
+  width: fit-content;
+  height: 300px;
+  object-fit: cover;
 }
 
 .centered {
